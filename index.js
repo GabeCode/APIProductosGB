@@ -10,7 +10,7 @@ app.use(cors())
 
 const db_manager = require('./persistence/dbmanager');
 
-app.listen(8985, () => {
+app.listen(process.env.PORT || 8985, () => {
     console.log("Api Corriendo")
 })
 
